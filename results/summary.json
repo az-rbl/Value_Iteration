@@ -1,0 +1,223 @@
+{
+  "env": "Taxi-v4",
+  "gamma": 0.9,
+  "epsilon": 1e-06,
+  "test_episodes": 100,
+  "n_states": 500,
+  "n_actions": 6,
+  "fixed_policy_evaluation": [
+    {
+      "name": "Aleatoria uniforme",
+      "iterations": 146,
+      "outer_iterations": 1,
+      "converged": true,
+      "final_delta": 9.124651541014828e-07,
+      "q_mean": -38.451301446376355,
+      "q_std": 5.725539322994033,
+      "q_min": -45.99354332698235,
+      "q_max": 20.0,
+      "v_mean": -38.451301446376355,
+      "max_diff_vs_q_star": 45.34483784957288,
+      "eval_metrics": {
+        "mean_reward": -776.18,
+        "std_reward": 82.21221077187987,
+        "mean_steps": 197.93,
+        "success_rate": 0.03
+      }
+    },
+    {
+      "name": "Sesgada (movimiento)",
+      "iterations": 139,
+      "outer_iterations": 1,
+      "converged": true,
+      "final_delta": 9.105206295600965e-07,
+      "q_mean": -20.567489493012943,
+      "q_std": 4.567283117174835,
+      "q_min": -27.096040346340974,
+      "q_max": 20.0,
+      "v_mean": -18.568233262126952,
+      "max_diff_vs_q_star": 30.670098457353422,
+      "eval_metrics": {
+        "mean_reward": -371.97,
+        "std_reward": 48.83921682418751,
+        "mean_steps": 198.21,
+        "success_rate": 0.01
+      }
+    },
+    {
+      "name": "Epsilon-greedy (0.2)",
+      "iterations": 47,
+      "outer_iterations": 1,
+      "converged": true,
+      "final_delta": 7.745205667930577e-07,
+      "q_mean": -7.284442519973416,
+      "q_std": 7.499782348937645,
+      "q_min": -20.83669611835551,
+      "q_max": 20.0,
+      "v_mean": -3.767400702279329,
+      "max_diff_vs_q_star": 6.560790306423758,
+      "eval_metrics": {
+        "mean_reward": -6.84,
+        "std_reward": 12.450477902474265,
+        "mean_steps": 17.85,
+        "success_rate": 1.0
+      }
+    },
+    {
+      "name": "Óptima (greedy)",
+      "iterations": 20,
+      "outer_iterations": 1,
+      "converged": true,
+      "final_delta": 0.0,
+      "q_mean": -1.6752711210454132,
+      "q_std": 6.705226156473951,
+      "q_min": -14.497160941090026,
+      "q_max": 20.0,
+      "v_mean": 2.4679209766162074,
+      "max_diff_vs_q_star": 0.0,
+      "eval_metrics": {
+        "mean_reward": 7.34,
+        "std_reward": 2.642801543816713,
+        "mean_steps": 13.66,
+        "success_rate": 1.0
+      }
+    }
+  ],
+  "policy_iteration": [
+    {
+      "name": "pi0: Aleatoria uniforme",
+      "iterations": 327,
+      "outer_iterations": 13,
+      "converged": true,
+      "final_delta": 0.0,
+      "q_mean": -1.6752711210454132,
+      "q_std": 6.705226156473951,
+      "q_min": -14.497160941090026,
+      "q_max": 20.0,
+      "v_mean": 2.4679209766162074,
+      "max_diff_vs_q_star": 0.0,
+      "eval_metrics": {
+        "mean_reward": 7.34,
+        "std_reward": 2.642801543816713,
+        "mean_steps": 13.66,
+        "success_rate": 1.0
+      }
+    },
+    {
+      "name": "pi0: Siempre Sur (a=0)",
+      "iterations": 203,
+      "outer_iterations": 17,
+      "converged": true,
+      "final_delta": 0.0,
+      "q_mean": -1.6752711210454132,
+      "q_std": 6.705226156473951,
+      "q_min": -14.497160941090026,
+      "q_max": 20.0,
+      "v_mean": 2.4679209766162074,
+      "max_diff_vs_q_star": 0.0,
+      "eval_metrics": {
+        "mean_reward": 7.34,
+        "std_reward": 2.642801543816713,
+        "mean_steps": 13.66,
+        "success_rate": 1.0
+      }
+    },
+    {
+      "name": "pi0: Determinista aleatoria",
+      "iterations": 370,
+      "outer_iterations": 17,
+      "converged": true,
+      "final_delta": 0.0,
+      "q_mean": -1.6752711210454132,
+      "q_std": 6.705226156473951,
+      "q_min": -14.497160941090026,
+      "q_max": 20.0,
+      "v_mean": 2.4679209766162074,
+      "max_diff_vs_q_star": 0.0,
+      "eval_metrics": {
+        "mean_reward": 7.34,
+        "std_reward": 2.642801543816713,
+        "mean_steps": 13.66,
+        "success_rate": 1.0
+      }
+    }
+  ],
+  "q_value_iteration": [
+    {
+      "name": "Q0 = 0 (ceros)",
+      "iterations": 20,
+      "outer_iterations": 1,
+      "converged": true,
+      "final_delta": 0.0,
+      "q_mean": -1.6752711210454132,
+      "q_std": 6.705226156473951,
+      "q_min": -14.497160941090026,
+      "q_max": 20.0,
+      "v_mean": 2.4679209766162074,
+      "max_diff_vs_q_star": 0.0,
+      "eval_metrics": {
+        "mean_reward": 7.34,
+        "std_reward": 2.642801543816713,
+        "mean_steps": 13.66,
+        "success_rate": 1.0
+      }
+    },
+    {
+      "name": "Q0 = +20 (optimista)",
+      "iterations": 19,
+      "outer_iterations": 1,
+      "converged": true,
+      "final_delta": 0.0,
+      "q_mean": -1.6752711210454132,
+      "q_std": 6.705226156473951,
+      "q_min": -14.497160941090026,
+      "q_max": 20.0,
+      "v_mean": 2.4679209766162074,
+      "max_diff_vs_q_star": 0.0,
+      "eval_metrics": {
+        "mean_reward": 7.34,
+        "std_reward": 2.642801543816713,
+        "mean_steps": 13.66,
+        "success_rate": 1.0
+      }
+    },
+    {
+      "name": "Q0 = -20 (pesimista)",
+      "iterations": 20,
+      "outer_iterations": 1,
+      "converged": true,
+      "final_delta": 0.0,
+      "q_mean": -1.6752711210454132,
+      "q_std": 6.705226156473951,
+      "q_min": -14.497160941090026,
+      "q_max": 20.0,
+      "v_mean": 2.4679209766162074,
+      "max_diff_vs_q_star": 0.0,
+      "eval_metrics": {
+        "mean_reward": 7.34,
+        "std_reward": 2.642801543816713,
+        "mean_steps": 13.66,
+        "success_rate": 1.0
+      }
+    },
+    {
+      "name": "Q0 ~ U(-5, 5)",
+      "iterations": 20,
+      "outer_iterations": 1,
+      "converged": true,
+      "final_delta": 0.0,
+      "q_mean": -1.6752711210454132,
+      "q_std": 6.705226156473951,
+      "q_min": -14.497160941090026,
+      "q_max": 20.0,
+      "v_mean": 2.4679209766162074,
+      "max_diff_vs_q_star": 0.0,
+      "eval_metrics": {
+        "mean_reward": 7.34,
+        "std_reward": 2.642801543816713,
+        "mean_steps": 13.66,
+        "success_rate": 1.0
+      }
+    }
+  ]
+}

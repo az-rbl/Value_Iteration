@@ -1,0 +1,40 @@
+Implementar y analizar el método de iteración para estimar la función de valor de la acción en un entorno de Gymnasium. Comparar los resultados obtenidos con diferentes políticas y discutir la convergencia.
+
+
+Descripción
+El método de iteración para estimar el valor de la acción (Policy Iteration) es un algoritmo fundamental en el aprendizaje por refuerzo para encontrar la política óptima en un proceso de decisión de Markov (MDP). 
+En esta tarea deberás: Implementar el método de iteración para estimar el valor de la acción Q(s,a) para una política fija π. Aplicar tu implementación a un entorno simple de Gymnasium (un entorno similar a FrozenLake-v1). Verificar la convergencia del algoritmo y analizar el comportamiento del valor estimado con diferentes políticas. Documentar tus resultados en un reporte. 
+
+Implementación
+
+    Implementa la iteración del valor para la función Q
+    Utiliza estructuras claras y comentadas en Python.
+    Usa la API de Gymnasium para interactuar con el entorno.
+
+2. Entorno
+
+    Usar un entorno de los siguientes:   CliffWalking-v0, 
+
+    Taxi-v4, 
+
+    Blackjack-v1, 
+
+    Roulette-v0
+    Definir una política inicial (por ejemplo, política aleatoria uniforme).
+    Estimar las funciones de valor Q con la política dada.
+
+3. Análisis
+
+    Define un criterio de convergencia (por ejemplo, cambio máximo en Q menor que un epsilon).
+    Muestra la evolución de la convergencia (gráficos de la diferencia entre iteraciones).
+    Compara los valores Q para diferentes políticas y políticas iniciales y discute resultados.
+
+
+Entregables
+
+    Código (.py o Jupyter Notebook) con mínimo de comentarios sobre implementación (repositorio git)
+    Reporte con:
+    Descripción de la implementación.
+    Resultados y gráficos.
+    Análisis y conclusiones.
+    Reporte uso de IA
